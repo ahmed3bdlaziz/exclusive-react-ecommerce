@@ -1,0 +1,125 @@
+import i18n from 'i18next'
+import { initReactI18next } from 'react-i18next'
+import LanguageDetector from 'i18next-browser-languagedetector'
+
+const resources = {
+  // en: {
+  // translation: {
+  //   'Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!':
+  //     'Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!',
+  //   'shop now': 'ShopNow',
+  //   English: 'English',
+  //   Spanish: 'Spanish',
+  //   Arabic: 'Arabic',
+  //   Home: 'Home',
+  //   Contact: 'Contact',
+  //   About: 'About',
+  //   SignUp: 'Sign Up',
+  //   'what are you looking for?': 'what are you looking for?',
+  //   Exclusive: 'Exclusive',
+  //   'Woman’s Fashion': 'Woman’s Fashion',
+  //   'men’s Fashion': 'Men’s Fashion',
+  //   Electronics: 'Electronics',
+  //   'home & lifestyle': 'Home & Lifestyle',
+  //   medicine: 'Medicine',
+  //   'sports & outdoors': 'Sports & Outdoors',
+  //   "baby's & toys": "Baby's & Toys",
+  //   'grocery & pets': 'Grocery & Pets',
+  //   'health & beauty': 'Health & Beauty',
+  //   'iphone 15 series': 'iPhone 15 Series',
+  //   'up to 10% off voucher': 'up to 10% off voucher',
+  //   "today's": "today's",
+  //   'flash sales': 'flash sales',
+  // },
+  // },
+  ar: {
+    translation: {
+      'Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!':
+        'تخفيضات صيفية على جميع ملابس السباحة وتوصيل سريع مجاني - خصم 50%!',
+      'shop now': 'تسوق الآن',
+      English: 'إنجليزي',
+      Spanish: 'إسباني',
+      Arabic: 'عربي',
+      Home: 'الرئيسية',
+      Contact: 'اتصل بنا',
+      About: 'عنا',
+      SignUp: 'تسجيل دخول',
+      'what are you looking for?': 'ما الذي تبحث عنه؟',
+      Exclusive: 'حصري',
+      'Woman’s Fashion': 'أزياء نسائية',
+      'men’s Fashion': 'أزياء رجالية',
+      Electronics: 'إلكترونيات',
+      'home & lifestyle': 'المنزل وأسلوب الحياة',
+      medicine: 'دواء',
+      'sports & outdoors': 'رياضة وخارجية',
+      "baby's & toys": 'أطفال وألعاب',
+      'grocery & pets': 'بقالة وحيوانات أليفة',
+      'health & beauty': 'صحة وجمال',
+      'iphone 15 series': ' ايفون 15 الجديد',
+      'up to 10% off voucher': 'تخفيض حتى 10% على جميع المنتجات',
+      "today's": 'اليوم',
+      'flash sales': 'تخفيضات قصيرة',
+      'view all products': 'عرض جميع المنتجات',
+      days: 'ايام',
+      hours: 'ساعات',
+      minutes: 'دقائق',
+      seconds: 'ثواني',
+      phones: 'هواتف',
+      camera: 'كاميرا',
+      headphones: 'حواتف إلكترونية',
+      'smart watches': ' ساعات ذكيه ',
+      computers: 'كمبيوتر',
+      gaming: 'الالعاب',
+      categories: 'التصنيفات',
+      'explore our categories': 'تصفح كل التصنيفات',
+      'this month': 'هذا الشهر',
+      'best selling products': 'المنتجات الأكثر مبيعاً',
+      'view all': 'عرض جميع المنتجات',
+      'Enhance Your Music Experience': 'ارتقِ بتجربتك الموسيقية',
+      'buy now': 'شراء الان',
+      'our products': 'منتجاتنا',
+      'explore our products': 'تصفح منتجاتنا',
+      Featured: 'مميزات',
+      'new arrival': 'وصل حديثا',
+      'FREE AND FAST DELIVERY': 'توصيل سريع ومجاني',
+      'Free delivery for all orders over $140':
+        'توصيل مجاني لجميع الطلبات التي تزيد قيمتها عن 140 دولارًا',
+      '24/7 customer services': 'خدمة العملاء 24/7',
+      'friendly 24/7 customer services':
+        'خدمة عملاء ودودة متاحة على مدار الساعة طوال أيام الأسبوع',
+      'money back guarantee': ' ضمان استرداد المال',
+      'we return money with in 30 days': ' نقوم برد المال في 30 يوم',
+      // footer
+      support: 'الدعم',
+      account: 'الحساب',
+      subscribe: 'اشترك',
+      'my account': 'حسابي',
+      'login / register': 'تسجيل الدخول / التسجيل',
+      cart: 'سلة المشتريات',
+      wishlist: 'المفضلة',
+      shop: 'المتجر',
+      'quick link': 'روابط سريعة',
+      'privacy policy': 'سياسة الخصوصية',
+      'terms of use': 'شروط الاستخدام',
+      faq: 'الاسئلة الشائعة',
+      'download app': 'تحميل التطبيق',
+      'save with app': 'وفر مع التطبيق',
+      'get in on google play': 'تحميل من متجر جوجل',
+      'download on the app store': 'تحميل من متجر التطبيقات',
+      ' exclusive, all rights reserved': 'كل الحقوق محفوظة',
+    },
+  },
+}
+
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    resources,
+    fallbackLng: 'en',
+    interpolation: {
+      escapeValue: false,
+    },
+  })
+
+export default i18n

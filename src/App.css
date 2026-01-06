@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@layer components {
+  .align-element {
+    @apply mx-auto max-w-7xl px-8;
+  }
+  section {
+    @apply my-5;
+  }
+}
+.swiper-pagination-bullet {
+  background-color: gray;
+}
+.swiper-pagination-bullet-active {
+  background-color: red;
+}

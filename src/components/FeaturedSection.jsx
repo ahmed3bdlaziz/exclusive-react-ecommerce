@@ -1,8 +1,8 @@
 import SectionTitle from "./SectionTitle";
-import playstation from "../assets/playstation.png";
-import perfume from "../assets/perfume.png";
-import speaker from "../assets/speaker.png";
-import womanImg from "../assets/woman-collection.png";
+import playstation from "../assets/Featured/playstation.png";
+import perfume from "../assets/Featured/perfume.png";
+import speaker from "../assets/Featured/speaker.png";
+import womanImg from "../assets/Featured/WomanCollection.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
